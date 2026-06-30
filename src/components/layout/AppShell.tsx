@@ -1,0 +1,12 @@
+import type { ReactNode } from 'react';
+import { Sidebar } from './Sidebar';
+
+/** App frame: fixed sidebar on the left, scrollable content area on the right. */
+export function AppShell({ children }: { children: ReactNode }) {
+  return (
+    <div className="flex min-h-screen">
+      <Sidebar />
+      <main className="flex-1 overflow-y-auto p-8">{children}</main>
+    </div>
+  );
+}

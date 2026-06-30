@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Page-level styling. Colours read from chiselui's design tokens so the whole
+ * page (not just chiselui components) follows the ThemeToggle. Fallbacks keep
+ * things readable if the tokens ever fail to load.
+ */
+body {
+  min-height: 100vh;
+  background: var(--color-surface, #ffffff);
+  color: var(--color-neutral-900, #111827);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
