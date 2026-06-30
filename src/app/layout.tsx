@@ -16,9 +16,24 @@ const geistMono = localFont({
   weight: '100 900',
 });
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
+const SITE_DESCRIPTION =
+  'Project and task management — a Linear / Notion-light workspace.';
+
 export const metadata: Metadata = {
-  title: 'Helix',
-  description: 'Project and task management — a Linear / Notion-light workspace.',
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: 'Helix',
+    template: '%s · Helix',
+  },
+  description: SITE_DESCRIPTION,
+  openGraph: {
+    title: 'Helix',
+    description: SITE_DESCRIPTION,
+    type: 'website',
+    url: SITE_URL,
+    siteName: 'Helix',
+  },
 };
 
 export default function RootLayout({
