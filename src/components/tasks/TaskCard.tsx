@@ -4,6 +4,7 @@ import { type KeyboardEvent, type MouseEvent } from 'react';
 import { Badge, Button, type BadgeVariant } from 'chiselui';
 import type { Task, TaskPriority } from '@/types/task';
 import { formatDateRange } from '@/lib/date';
+import { getInitials } from '@/lib/avatar';
 
 interface TaskCardProps {
   task: Task;
@@ -20,14 +21,6 @@ const PRIORITY_META: Record<
   medium: { label: 'Medium', variant: 'warning' },
   high: { label: 'High', variant: 'danger' },
 };
-
-/** Derive up to two initials for the textual avatar. */
-function getInitials(name: string): string {
-  const parts = name.trim().split(/\s+/).filter(Boolean);
-  if (parts.length === 0) return '—';
-  if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
-  return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
-}
 
 export function TaskCard({ task, onEdit, onDelete }: TaskCardProps) {
   const priority = PRIORITY_META[task.priority];

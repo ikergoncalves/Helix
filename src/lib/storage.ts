@@ -9,6 +9,7 @@
 /** Keys used by Helix to namespace its localStorage entries. */
 export const STORAGE_KEYS = {
   projects: 'helix.projects',
+  preferences: 'helix.preferences',
 } as const;
 
 export type StorageKey = (typeof STORAGE_KEYS)[keyof typeof STORAGE_KEYS];
