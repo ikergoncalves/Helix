@@ -6,6 +6,10 @@ A Linear / Notion-light workspace for managing projects and tasks — a focused,
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwindcss&logoColor=white)
 
+## Live Demo
+
+**[helix-ten-zeta.vercel.app](https://helix-ten-zeta.vercel.app)** — deployed on Vercel.
+
 ## Tech Stack
 
 - **[Next.js 14](https://nextjs.org)** — App Router, server/client components, file-based routing.
@@ -58,7 +62,8 @@ Every visual element in Helix comes from **[chiselui](https://www.npmjs.com/pack
 
 ## Roadmap
 
-- Deploy to [Vercel](https://vercel.com).
+- Export projects and tasks to CSV / JSON.
+- Command palette and keyboard shortcuts (⌘K) for quick navigation.
 
 ---
 
