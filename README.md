@@ -5,6 +5,7 @@ A Linear / Notion-light workspace for managing projects and tasks — a focused,
 ![Next.js](https://img.shields.io/badge/Next.js-14-000000?logo=next.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwindcss&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Live Demo
 
@@ -64,6 +65,10 @@ Every visual element in Helix comes from **[chiselui](https://www.npmjs.com/pack
 
 - Export projects and tasks to CSV / JSON.
 - Command palette and keyboard shortcuts (⌘K) for quick navigation.
+
+## License
+
+MIT — see [LICENSE](./LICENSE) for details. Helix is intentionally built to be forked: clean up the seed data, wire in your own backend, and it makes a solid starting point or template for your next dashboard.
 
 ---
 
